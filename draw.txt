@@ -1,0 +1,29 @@
+// Create secondary colors for tanks
+        Color darkRed = new Color(139, 0, 0); // RGB for dark red
+        Color darkGreen = new Color(0, 100, 0); // RGB for dark green
+
+        //Draw enemy tank with current location
+        g.setColor(Color.RED);
+        g.fillRect(enemyTank.getX(),enemyTank.getY(),40,50); // Body
+        g.setColor(darkRed); 
+        g.fillRect(enemyTank.getX()-10,enemyTank.getY()-5,10,60); // Left wheels
+        g.fillRect(enemyTank.getX()+40,enemyTank.getY()-5,10,60); // Right wheels
+        g.fillRect(enemyTank.getX()+5,enemyTank.getY()+5,30,35); // Medium Box
+        g.setColor(Color.RED);
+        g.fillRect(enemyTank.getX()+11,enemyTank.getY()+10,18,20); // Small Box
+        g.setColor(Color.BLACK);
+        g.fillRect(enemyTank.getX()+18,enemyTank.getY()+5,4,15); // shooter
+
+
+        //Draw player tank with current location
+        g.setColor(Color.GREEN);
+        g.fillRect(playerTank.getX(),playerTank.getY(),40,50); // Body
+        g.setColor(darkGreen);
+        g.fillRect(playerTank.getX()-10,playerTank.getY()-5,10,60); // Left wheels
+        g.fillRect(playerTank.getX()+40,playerTank.getY()-5,10,60); // Right wheels
+        g.fillRect(playerTank.getX()+5,playerTank.getY()+5,30,35); // Medium Box
+        g.setColor(Color.GREEN);
+        g.fillRect(playerTank.getX()+11,playerTank.getY()+10,18,20); // Small Box
+        g.setColor(Color.BLACK);
+        g.fillRect(playerTank.getX()+18,playerTank.getY()+5,4,15); // shooter
+    }

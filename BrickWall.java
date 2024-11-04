@@ -7,7 +7,7 @@ public class BrickWall extends WallPiece{
     protected int health;
 
     public BrickWall(int x,int y, boolean destructible, int health,Color color){
-        super(x,y,destructible);
+        super(x,y,destructible, 40, 40);
         this.health = health;
         this.color = color;
     }
